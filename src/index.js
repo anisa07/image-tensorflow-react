@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LoadAndPreviewImage from './LoadAndPreviewImage';
+import App from './App';
+import { MlReactProvider } from "./context";
 
-ReactDOM.render(
-<LoadAndPreviewImage />,
-document.getElementById('root')
-);
+ReactDOM.render(<MlReactProvider><App/></MlReactProvider>, document.getElementById('root'));

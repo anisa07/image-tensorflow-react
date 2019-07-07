@@ -10,7 +10,10 @@ function PredictionList () {
 			<h3>Predictions</h3>
 			<ol>
 				{topPredictions.map((prediction) => (
-					<li key={prediction.className + prediction.probability}>{prediction.className}</li>
+					<li key={prediction.className + prediction.probability}>
+						{prediction.className}
+						<span> - {prediction.probability.toFixed(3)}</span>
+					</li>
 				))}
 			</ol>
 		</div>
